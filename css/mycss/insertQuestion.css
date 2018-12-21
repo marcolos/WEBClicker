@@ -1,0 +1,90 @@
+/* NON LO USO PIU*/
+#container{
+    width: 94%;   /* container è contuneto nella pagina principale che ha dimensione 1440, dunque la  */
+    margin: 3%;   /*  larghezza(content+padding+border) è il 94% del totale della pagina -> 1440*94/100 = 1353,6 (escluso margin) */
+    padding: 3%;  /*  il restante 6%(3%+3%) è il margin -> 1440*6/100 = 86,4 */
+    border: 1px solid #333; /* se togliamo padding e border, il content ha larghezza 1203,63. Nel nostro caso il border = 0 */
+    border-radius: 12px;
+}
+
+.container{
+    margin-top: 4%;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 4% 4%;
+}
+#labelAnswer{
+    margin-top: 5%;
+    margin-left: 4%; /* labelAnswer è contenuto dentro container che ha dimensione 1296 dunque il margin left sarà
+                         1296*4/100 = 50,76 */
+}
+
+
+#insertAnswer{
+    margin-top: 3%;
+    margin-left: 7%;
+    width: 62%;  /* insertAnswer è contenuto dentro myrow che ha dimensione 1203,63 dunque la larghezza del content di insertAnswer
+                    sarà 1203,63*62/100 = 746,25.  Il div insertanswer occupa il 70%(62%content+8margin-left) del myrow */
+}
+
+#addImage{
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    float: right; /* occupa il restante 30% del myrow */
+    width: 30%;
+}
+
+#footer{
+    margin-top: 5%;
+}
+
+#sendButton{
+    padding-left: 15%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight:bold;
+    text-align: right;
+}
+
+.buttonAddItem{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: xx-large;
+    margin-right: 2%;
+}
+
+#buttonAddSub{
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    float: right; /* occupa il restante 30% del myrow */
+    width: 30%;
+}
+
+/*#input1{*/
+    /*background-color: #00bcd4;*/
+/*}*/
+
+@media screen and (max-width: 600px) {
+    /*
+    #container {
+        margin-bottom: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+        border: 2px solid silver;
+    }
+    */
+    #addImage{
+        width: 90%;
+        margin-left: 8%;
+        float: left;
+    }
+
+    #sendButton{
+        padding-left: 70%;
+    }
+}

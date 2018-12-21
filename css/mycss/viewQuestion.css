@@ -1,0 +1,84 @@
+#container{
+    width: 94%;   /* container è contenuto nella pagina principale che ha dimensione 1440, dunque la  */
+                    /*  larghezza(content+padding+border) è il 94% del totale della pagina -> 1440*94/100 = 1353,6 (escluso margin) */
+    margin: 3%;    /*  il restante 6%(3%+3%) è il margin -> 1440*6/100 = 86,4 */
+     /* se togliamo padding e border, il content ha larghezza 1203,63. Nel nostro caso il border = 0 */
+
+}
+
+#wrapperConteiner{
+    padding: 3%;
+    border: 2px solid #333;
+    border-radius: 12px;
+}
+
+/*La domanda*/
+#viewQuestion{
+   text-align: center;
+}
+
+#blockAnswer{
+    margin-top: 3%;
+    margin-left: 10%;
+    width: 50%;
+}
+
+
+
+#addImage{
+    margin-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 40%;
+}
+
+#footer{
+    padding: 3%;
+}
+
+#sendButton{
+    padding-left: 15%;
+}
+
+.col-sm-10{
+    padding-left: 25px;
+    padding-top: 2px;
+}
+/* HIDE RADIO */
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+    cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+    outline: 2px solid #f00;
+}
+
+@media screen and (max-width: 600px) {
+    /*
+    #container {
+        margin-bottom: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+        border: 2px solid silver;
+    }
+    */
+    #addImage{
+        width: 90%;
+        margin-left: 8%;
+        float: left;
+    }
+
+    #sendButton{
+        padding-left: 70%;
+    }
+}
