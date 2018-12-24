@@ -31,6 +31,7 @@ if ($result->num_rows > 0) {
         $countC = $row['COUNTC'];
         $countD = $row['COUNTD'];
         $countE = $row['COUNTE'];
+        $setted = $row['SETTED'];
 
         $countAnswer = 2;
         if($answerC != 'NULL'){
@@ -61,6 +62,15 @@ if(isset($_POST['SubmitStartAnswer'])){ //check if form was submitted
 }
 ?>
 
+<?php
+if(isset($_POST['SubmitStopAnswer'])){ //check if form was submitted
+    include('../../session.php');
+    $username = $_SESSION['login_user'];
+
+    $conn->query("UPDATE QUESTIONS SET SETTED='0' WHERE USERNAME = '$username'");
+}
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -78,20 +88,7 @@ if(isset($_POST['SubmitStartAnswer'])){ //check if form was submitted
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link rel="stylesheet" type="text/css" href="../../css/mycss/viewQuestion.css">
-<!--    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>-->
-<!--    <script type="text/javascript">-->
-<!--        $(document).ready( function () {-->
-<!--            $('form').submit( function () {-->
-<!--                var formdata = $(this).serialize();-->
-<!--                $.ajax({-->
-<!--                    type: "GET",-->
-<!--                    url: "session_set.php",-->
-<!--                    data: formdata,-->
-<!--                });-->
-<!--                return false;-->
-<!--            });-->
-<!--        });-->
-<!--    </script>-->
+
 </head>
 <body>
 <div id="container">
@@ -176,19 +173,32 @@ if(isset($_POST['SubmitStartAnswer'])){ //check if form was submitted
             <div class="col-sm">
                 <!--One of three columns -->
             </div>
-            <div class="col-sm">
+            <div class="col-sm" id="myStartStopDiv">
                 <!--Second of three columns -->
+
+                <div id="start" style="display: none">
                 <form action="" method="post">
 <!--                    La uso per passare l'idQuestion alla pagina start_answer.php-->
                     <input type="hidden" name="idQuestion" value="<?php echo $id ?>">
-                    <input type="submit" name="SubmitStartAnswer" value="Start To Answers" class="btn btn-success btn-lg">
+                    <input type="submit" name="SubmitStartAnswer" value="Start" class="btn btn-success btn-lg text-uppercase myStartStopButton" onclick="startAnswer()">
                 </form>
+                </div>
+
+                <div id="stop" style="display: none">
+                    <form action="" method="post">
+                        <!--                    La uso per passare l'idQuestion alla pagina start_answer.php-->
+                        <input type="hidden" name="idQuestion" value="<?php echo $id ?>">
+                        <input type="submit" name="SubmitStopAnswer" value="Stop" class="btn btn-danger btn-lg text-uppercase myStartStopButton" onclick="stopAnswer()">
+                    </form>
+                </div>
+
+
             </div>
-            <div class="col-sm" id="resultsButton">
+            <div class="col-sm" id="myResultDiv">
                 <!--Third of three columns -->
                 <form action="results.php" target="_blank">
                     <input type="hidden" name="idQuestion" value="<?php echo $id ?>">
-                    <input type="submit" value="Results" class="btn btn-success btn-lg">
+                    <input type="submit" value="Results" class="btn btn-success btn-lg text-uppercase myResultButton">
                 </form>
             </div>
         </div>
@@ -200,5 +210,42 @@ if(isset($_POST['SubmitStartAnswer'])){ //check if form was submitted
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <!-- Bootstrap css-->
     <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        var setted = <?php echo $setted; ?>
+
+           if (setted==0 ) {
+               document.getElementById('start').style.display = 'block';
+           }
+
+           if (setted==1 ) {
+               document.getElementById('stop').style.display = 'block';
+           }
+
+           function startAnswer() {
+               document.getElementById('start').style.display = 'block';
+               <?php echo
+
+                   include('../../session.php');
+                   $id = $idQuestion;
+                   $username = $_SESSION['login_user'];
+
+                   $conn->query("UPDATE QUESTIONS SET SETTED='0' WHERE USERNAME = '$username'");
+                   $conn->query("UPDATE QUESTIONS SET SETTED='1' WHERE ID_QUESTION = '$id'"); ;
+               ?>
+           }
+
+            function stopAnswer() {
+                document.getElementById('start').style.display = 'block';
+                <?php echo
+
+                include('../../session.php');
+                $username = $_SESSION['login_user'];
+
+                $conn->query("UPDATE QUESTIONS SET SETTED='0' WHERE USERNAME = '$username'");;
+                ?>
+            }
+    </script>
+
 </body>
 </html>
