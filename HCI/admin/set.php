@@ -91,6 +91,7 @@ if(isset($_POST['SubmitStopAnswer'])){ //check if form was submitted
 
 </head>
 <body>
+
 <div id="container">
     <div id="wrapperConteiner">
         <div class="form-group row">
@@ -177,11 +178,11 @@ if(isset($_POST['SubmitStopAnswer'])){ //check if form was submitted
                 <!--Second of three columns -->
 
                 <div id="start" style="display: none">
-                <form action="" method="post">
-<!--                    La uso per passare l'idQuestion alla pagina start_answer.php-->
-                    <input type="hidden" name="idQuestion" value="<?php echo $id ?>">
-                    <input type="submit" name="SubmitStartAnswer" value="Start" class="btn btn-success btn-lg text-uppercase myStartStopButton" onclick="startAnswer()">
-                </form>
+                    <form action="" method="post">
+    <!--                    La uso per passare l'idQuestion alla pagina start_answer.php-->
+                        <input type="hidden" name="idQuestion" value="<?php echo $id ?>">
+                        <input type="submit" name="SubmitStartAnswer" value="Start" class="btn btn-success btn-lg text-uppercase myStartStopButton" onclick="startAnswer()">
+                    </form>
                 </div>
 
                 <div id="stop" style="display: none">
@@ -211,40 +212,26 @@ if(isset($_POST['SubmitStopAnswer'])){ //check if form was submitted
     <!-- Bootstrap css-->
     <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
 
+
     <script type="text/javascript">
-        var setted = <?php echo $setted; ?>
+        var setted = <?php echo $setted; ?>;
+        document.write(setted);
 
-           if (setted==0 ) {
-               document.getElementById('start').style.display = 'block';
-           }
+        if (setted==0 ) {
+            document.getElementById('start').style.display = 'block';
+        }
 
-           if (setted==1 ) {
-               document.getElementById('stop').style.display = 'block';
-           }
+        if (setted==1 ) {
+            document.getElementById('stop').style.display = 'block';
+        }
 
-           function startAnswer() {
-               document.getElementById('start').style.display = 'block';
-               <?php echo
+        function startAnswer() {
+            document.getElementById('start').style.display = 'block';
+        }
 
-                   include('../../session.php');
-                   $id = $idQuestion;
-                   $username = $_SESSION['login_user'];
-
-                   $conn->query("UPDATE QUESTIONS SET SETTED='0' WHERE USERNAME = '$username'");
-                   $conn->query("UPDATE QUESTIONS SET SETTED='1' WHERE ID_QUESTION = '$id'"); ;
-               ?>
-           }
-
-            function stopAnswer() {
-                document.getElementById('start').style.display = 'block';
-                <?php echo
-
-                include('../../session.php');
-                $username = $_SESSION['login_user'];
-
-                $conn->query("UPDATE QUESTIONS SET SETTED='0' WHERE USERNAME = '$username'");;
-                ?>
-            }
+        function stopAnswer() {
+            document.getElementById('start').style.display = 'block';
+        }
     </script>
 
 </body>

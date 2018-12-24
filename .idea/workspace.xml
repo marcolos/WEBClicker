@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="160a59b7-8055-42c3-87af-72f40134ab5f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HCI/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/HCI/admin/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HCI/admin/set.php" beforeDir="false" afterPath="$PROJECT_DIR$/HCI/admin/set.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/mycss/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mycss/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/mycss/viewQuestion.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mycss/viewQuestion.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,29 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HCI/admin/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/mycss/admin.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HCI/admin/set.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2616">
-              <caret line="62" column="2" selection-start-line="54" selection-end-line="62" selection-end-column="2" />
+            <state relative-caret-position="-225">
+              <caret line="187" column="51" selection-start-line="187" selection-start-column="51" selection-end-line="187" selection-end-column="51" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -48,42 +26,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/mycss/viewQuestion.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HCI/admin/insertQuestion.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="145" column="58" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="58" />
+            <state relative-caret-position="1487">
+              <caret line="145" column="45" lean-forward="true" selection-start-line="145" selection-start-column="45" selection-end-line="145" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#div#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/mycss/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/mycss/insertQuestion.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="63" column="15" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -190,12 +139,6 @@
               <item name="WEBClicker" type="462c0819:PsiDirectoryNode" />
               <item name="ParallelComputing" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="WEBClicker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WEBClicker" type="462c0819:PsiDirectoryNode" />
-              <item name="ParallelComputing" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -242,12 +185,12 @@
       <updated>1544619179691</updated>
       <workItem from="1544619180924" duration="357000" />
       <workItem from="1544619631523" duration="1262000" />
-      <workItem from="1544621034781" duration="85054000" />
+      <workItem from="1544621034781" duration="87027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86673000" />
+    <option name="totallyTimeSpent" value="88646000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -475,20 +418,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HCI/admin/insertQuestion.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="145" column="58" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="58" />
+        <state relative-caret-position="1487">
+          <caret line="145" column="45" lean-forward="true" selection-start-line="145" selection-start-column="45" selection-end-line="145" selection-end-column="45" />
           <folding>
             <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HCI/admin/set.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2616">
-          <caret line="62" column="2" selection-start-line="54" selection-end-line="62" selection-end-column="2" />
+        <state relative-caret-position="-225">
+          <caret line="187" column="51" selection-start-line="187" selection-start-column="51" selection-end-line="187" selection-end-column="51" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
