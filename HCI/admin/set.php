@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: marco
- * Date: 2018-12-12
- * Time: 14:32
- */
+// CONTROLLO ACCESSO
 include ('../../session.php');
 $url = dirname(__FILE__);
 $array = explode('/',$url);
@@ -13,7 +8,33 @@ $folder = $array[$count-2];
 if ($folder!=$_SESSION['role']){
     header("location:/index.html");
 }
+?>
 
+
+<?php
+// VIENE ESEGUITA QUESTA QUERY SE PREMO START
+if(isset($_POST['SubmitStartAnswer'])){ //check if form was submitted
+    include('../../session.php');
+    $idQuestion = $_POST['idQuestion'];
+    $username = $_SESSION['login_user'];
+
+    $conn->query("UPDATE QUESTIONS SET SETTED='0' WHERE USERNAME = '$username'");
+    $conn->query("UPDATE QUESTIONS SET SETTED='1' WHERE ID_QUESTION = '$idQuestion'");
+}
+?>
+
+<?php
+// VIENE ESEGUITA QUESTA QUERY SE PREMO STOP
+if(isset($_POST['SubmitStopAnswer'])){ //check if form was submitted
+    include('../../session.php');
+    $username = $_SESSION['login_user'];
+
+    $conn->query("UPDATE QUESTIONS SET SETTED='0' WHERE USERNAME = '$username'");
+}
+?>
+
+<?php
+// PRENDO I DATI DAL DB
 $id = mysqli_real_escape_string($conn, $_REQUEST['id']);
 
 $result = $conn->query("SELECT * FROM QUESTIONS WHERE ID_QUESTION = '$id'");
@@ -49,28 +70,6 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
-
-
-<?php
-if(isset($_POST['SubmitStartAnswer'])){ //check if form was submitted
-    include('../../session.php');
-    $idQuestion = $_POST['idQuestion'];
-    $username = $_SESSION['login_user'];
-
-    $conn->query("UPDATE QUESTIONS SET SETTED='0' WHERE USERNAME = '$username'");
-    $conn->query("UPDATE QUESTIONS SET SETTED='1' WHERE ID_QUESTION = '$idQuestion'");
-}
-?>
-
-<?php
-if(isset($_POST['SubmitStopAnswer'])){ //check if form was submitted
-    include('../../session.php');
-    $username = $_SESSION['login_user'];
-
-    $conn->query("UPDATE QUESTIONS SET SETTED='0' WHERE USERNAME = '$username'");
-}
-?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -179,7 +178,7 @@ if(isset($_POST['SubmitStopAnswer'])){ //check if form was submitted
 
                 <div id="start" style="display: none">
                     <form action="" method="post">
-    <!--                    La uso per passare l'idQuestion alla pagina start_answer.php-->
+                        <!-- La uso per passare l'idQuestion-->
                         <input type="hidden" name="idQuestion" value="<?php echo $id ?>">
                         <input type="submit" name="SubmitStartAnswer" value="Start" class="btn btn-success btn-lg text-uppercase myStartStopButton" onclick="startAnswer()">
                     </form>
@@ -187,7 +186,7 @@ if(isset($_POST['SubmitStopAnswer'])){ //check if form was submitted
 
                 <div id="stop" style="display: none">
                     <form action="" method="post">
-                        <!--                    La uso per passare l'idQuestion alla pagina start_answer.php-->
+                        <!-- La uso per passare l'idQuestion-->
                         <input type="hidden" name="idQuestion" value="<?php echo $id ?>">
                         <input type="submit" name="SubmitStopAnswer" value="Stop" class="btn btn-danger btn-lg text-uppercase myStartStopButton" onclick="stopAnswer()">
                     </form>
@@ -215,23 +214,27 @@ if(isset($_POST['SubmitStopAnswer'])){ //check if form was submitted
 
     <script type="text/javascript">
         var setted = <?php echo $setted; ?>;
+        var count=0;
         document.write(setted);
+        document.write(count);
 
         if (setted==0 ) {
             document.getElementById('start').style.display = 'block';
+            count =1;
         }
 
         if (setted==1 ) {
             document.getElementById('stop').style.display = 'block';
+            count=1;
         }
-
-        function startAnswer() {
-            document.getElementById('start').style.display = 'block';
-        }
-
-        function stopAnswer() {
-            document.getElementById('start').style.display = 'block';
-        }
+        //
+        // function startAnswer() {
+        //     document.getElementById('start').style.display = 'block';
+        // }
+        //
+        // function stopAnswer() {
+        //     document.getElementById('start').style.display = 'block';
+        // }
     </script>
 
 </body>
