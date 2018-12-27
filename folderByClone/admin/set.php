@@ -55,13 +55,13 @@ if ($result->num_rows > 0) {
         $setted = $row['SETTED'];
 
         $countAnswer = 2;
-        if($answerC != 'NULL'){
+        if($answerC != ''){
             $countAnswer ++;
         }
-        if($answerD != 'NULL'){
+        if($answerD != ''){
             $countAnswer ++;
         }
-        if($answerE != 'NULL'){
+        if($answerE != ''){
             $countAnswer ++;
         }
     }
@@ -180,7 +180,7 @@ $conn->close();
                     <form action="" method="post">
                         <!-- La uso per passare l'idQuestion-->
                         <input type="hidden" name="idQuestion" value="<?php echo $id ?>">
-                        <input type="submit" name="SubmitStartAnswer" value="Start" class="btn btn-success btn-lg text-uppercase myStartStopButton" onclick="startAnswer()">
+                        <input type="submit" name="SubmitStartAnswer" value="Start" class="btn btn-success btn-lg text-uppercase myStartStopButton">
                     </form>
                 </div>
 
@@ -188,7 +188,7 @@ $conn->close();
                     <form action="" method="post">
                         <!-- La uso per passare l'idQuestion-->
                         <input type="hidden" name="idQuestion" value="<?php echo $id ?>">
-                        <input type="submit" name="SubmitStopAnswer" value="Stop" class="btn btn-danger btn-lg text-uppercase myStartStopButton" onclick="stopAnswer()">
+                        <input type="submit" name="SubmitStopAnswer" value="Stop" class="btn btn-danger btn-lg text-uppercase myStartStopButton">
                     </form>
                 </div>
 
@@ -215,8 +215,8 @@ $conn->close();
     <script type="text/javascript">
         var setted = <?php echo $setted; ?>;
         var count=0;
-        document.write(setted);
-        document.write(count);
+        // document.write(setted);
+        // document.write(count);
 
         if (setted==0 ) {
             document.getElementById('start').style.display = 'block';
@@ -227,14 +227,6 @@ $conn->close();
             document.getElementById('stop').style.display = 'block';
             count=1;
         }
-        //
-        // function startAnswer() {
-        //     document.getElementById('start').style.display = 'block';
-        // }
-        //
-        // function stopAnswer() {
-        //     document.getElementById('start').style.display = 'block';
-        // }
     </script>
 
 </body>

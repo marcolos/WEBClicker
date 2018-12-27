@@ -23,9 +23,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         $_SESSION['role'] = $insegnamento;
         $conn->close();
-        header('Location:' . $insegnamento . '/admin/index.php'); //così mi riinderizza ua un'altra pagina
-        //include $insegnamento.'/admin/set.php';  così includo una pagina, ne prendo solo il codice e resto nella stessa pagina
-    } else {
+        if ($insegnamento == "SuperAdmin"){
+            header('Location:' . $insegnamento . '/index.php');
+        } else {
+            header('Location:' . $insegnamento . '/admin/index.php'); //così mi riinderizza ua un'altra pagina
+            //include $insegnamento.'/admin/set.php';  così includo una pagina, ne prendo solo il codice e resto nella stessa pagina
+        }
+        } else {
         echo "Your Username or Password is invalid";
     }
 } else {

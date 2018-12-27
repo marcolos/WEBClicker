@@ -30,7 +30,7 @@ if($_GET['del'])
 <html lang="en">
     <head>
         <script>
-            function Deleteqry(id)
+            function Delete(id)
             {
                 window.location="index.php?del="+id;
                 return false;
@@ -85,9 +85,9 @@ if($_GET['del'])
                             </div>
                             <div class="col-3">
                                 <button class="btn btn-primary text-uppercase" onclick="window.location.href = '<?php echo 'set.php?id='.$id?>'">View</button>
-                                <button class="btn btn-mycolor text-uppercase">Edit</button>
+                                <button class="btn btn-mycolor text-uppercase" onclick="window.location.href = '<?php echo 'editQuestion.php?id='.$id?>'">Edit</button>
 <!--                                <button name="id" value="--><?php //echo $id;?><!--" class="btn btn-primary text-uppercase">Delete</button>-->
-                                <input class="btn btn-danger text-uppercase" value="delete" type="button" name="abc" id="abc" onclick="return Deleteqry(<?php echo $id ?>);"/>
+                                <input class="btn btn-danger text-uppercase" value="delete" type="button" name="abc" id="abc" onclick="return Delete(<?php echo $id ?>);"/>
                             </div>
                     </li>
         <?php
@@ -99,7 +99,7 @@ if($_GET['del'])
         <?php
 
             } else {
-                echo "0 results";
+                echo "Nessuna domanda presente";
             }
         ?>
 

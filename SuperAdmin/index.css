@@ -1,0 +1,19 @@
+.container{
+    text-align: center;
+}
+
+#addInsegnamento{
+    width: 450px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight:bold;
+}
+
+.form-group h6{
+    text-align: right;
+}
+
+.form-group input {
+    border-radius: 2rem;
+}

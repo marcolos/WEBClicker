@@ -48,7 +48,7 @@ h1,h2,h3,h4,h5,h6{
     text-align: right;
 }
 
-.buttonAddItem{
+.buttonAddSubItem{
     border-radius: 50%;
     width: 70px;
     height: 70px;
@@ -56,18 +56,19 @@ h1,h2,h3,h4,h5,h6{
     margin-right: 2%;
 }
 
+
 #buttonAddSub{
     margin-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
     float: right; /* occupa il restante 30% del myrow */
     width: 30%;
+    color: white;
 }
 
-/*#input1{*/
-    /*background-color: #00bcd4;*/
-/*}*/
-
+.form-group input {
+    border-radius: 2rem;
+}
 @media screen and (max-width: 600px) {
     /*
     #container {

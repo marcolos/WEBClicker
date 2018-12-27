@@ -19,7 +19,7 @@ if(isset($_POST['SubmitSendAnswer'])){ //check if form was submitted
     //$id = mysqli_real_escape_string($conn, $_REQUEST['idQuestion']);
 
     $tmp = 0;
-
+    $conn->query("LOCK TABLES QUESTIONS WRITE;");
     $result = $conn->query("SELECT * FROM QUESTIONS WHERE ID_QUESTION = '$id'");
     if ($result->num_rows > 0) {
         // output data of each row
@@ -49,9 +49,11 @@ if(isset($_POST['SubmitSendAnswer'])){ //check if form was submitted
                 $tmp = $row['COUNTE'] + 1;
                 $conn->query("UPDATE QUESTIONS SET COUNTE='$tmp' WHERE ID_QUESTION = '$id'");
             }
+            $conn->query("UNLOCK TABLES;");
             header("location:ok_sendAnswer.html");
         }
     } else {
+        $conn->query("UNLOCK TABLES");
         echo "No result";
     }
     $conn->close();

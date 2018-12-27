@@ -16,44 +16,17 @@ if(isset($_POST['submitInsertAnswer'])){ //check if form was submitted
     $question = mysqli_real_escape_string($conn, $_REQUEST['question']);
     $answerA = mysqli_real_escape_string($conn, $_REQUEST['answerA']);
     $answerB = mysqli_real_escape_string($conn, $_REQUEST['answerB']);
+    $answerC = mysqli_real_escape_string($conn, $_REQUEST['answerC']);
+    $answerD = mysqli_real_escape_string($conn, $_REQUEST['answerD']);
+    $answerE = mysqli_real_escape_string($conn, $_REQUEST['answerE']);
     $countA = 0;
     $countB = 0;
-
-    if (mysqli_real_escape_string($conn, $_REQUEST['answerC'])==''){
-        $answerC = 'NULL';
-        $countC = -1;
-    } else{
-        $answerC = mysqli_real_escape_string($conn, $_REQUEST['answerC']);
-        $countC = 0;
-    }
-
-    if (mysqli_real_escape_string($conn, $_REQUEST['answerD'])==''){
-        $answerD = 'NULL';
-        $countD = -1;
-    } else{
-        $answerD = mysqli_real_escape_string($conn, $_REQUEST['answerD']);
-        $countD = 0;
-    }
-
-    if (mysqli_real_escape_string($conn, $_REQUEST['answerE'])==''){
-        $answerE = 'NULL';
-        $countE = -1;
-    } else{
-        $answerE = mysqli_real_escape_string($conn, $_REQUEST['answerE']);
-        $countE = 0;
-    }
-//    $answerC = mysqli_real_escape_string($conn, $_REQUEST['answerC']);
-//    $answerD = mysqli_real_escape_string($conn, $_REQUEST['answerD']);
-//    $answerE = mysqli_real_escape_string($conn, $_REQUEST['answerE']);
-//    $countA = 0;
-//    $countB = 0;
-//    $countC = 0;
-//    $countD = 0;
-//    $countE = 0;
-   $setted = 0;
+    $countC = 0;
+    $countD = 0;
+    $countE = 0;
+    $setted = 0;
 
     $sql = "INSERT INTO QUESTIONS (USERNAME,QUESTION,ANSWERA,ANSWERB,ANSWERC,ANSWERD,ANSWERE,COUNTA,COUNTB,COUNTC,COUNTD,COUNTE,SETTED) VALUES ('$username','$question','$answerA','$answerB','$answerC','$answerD','$answerE','$countA','$countB','$countC','$countD','$countE','$setted')";
-//    $sql = "INSERT INTO QUESTIONS (USERNAME,QUESTION,ANSWERA,ANSWERB,ANSWERC,ANSWERD,ANSWERE,SETTED) VALUES ('$username','$question','$answerA','$answerB','$answerC','$answerD','$answerE',$setted')";
 
     if ($conn->query($sql) === TRUE) {
         header('Location:index.php');
@@ -144,35 +117,35 @@ if(isset($_POST['submitInsertAnswer'])){ //check if form was submitted
                         </div>
 
                         <div id="myC" style="display:none">
-                        <div class="form-group row" >
-                            <label for="answerCLabel" class="col-sm-1 col-form-label"><h6>C.</h6></label>
-                            <div class="col-sm-10">
-                                <input name="answerC" type="text" class="form-control" id="answerCLabel" placeholder="Insert answer C">
+                            <div class="form-group row" >
+                                <label for="answerCLabel" class="col-sm-1 col-form-label"><h6>C.</h6></label>
+                                <div class="col-sm-10">
+                                    <input name="answerC" type="text" class="form-control" id="answerCLabel" placeholder="Insert answer C">
+                                </div>
                             </div>
-                        </div>
                         </div>
 
                         <div id="myD" style="display:none">
-                        <div class="form-group row">
-                            <label for="answerDLabel" class="col-sm-1 col-form-label"><h6>D.</h6></label>
-                            <div class="col-sm-10">
-                                <input name="answerD" type="text" class="form-control" id="answerDLabel" placeholder="Insert answer D">
+                            <div class="form-group row">
+                                <label for="answerDLabel" class="col-sm-1 col-form-label"><h6>D.</h6></label>
+                                <div class="col-sm-10">
+                                    <input name="answerD" type="text" class="form-control" id="answerDLabel" placeholder="Insert answer D">
+                                </div>
                             </div>
-                        </div>
                         </div>
 
                         <div id="myE" style="display:none">
-                        <div class="form-group row">
-                            <label for="answerELabel" class="col-sm-1 col-form-label"><h6>E.</h6></label>
-                            <div class="col-sm-10">
-                                <input name="answerE" type="text" class="form-control" id="answerELabel" placeholder="Insert answer E">
+                            <div class="form-group row">
+                                <label for="answerELabel" class="col-sm-1 col-form-label"><h6>E.</h6></label>
+                                <div class="col-sm-10">
+                                    <input name="answerE" type="text" class="form-control" id="answerELabel" placeholder="Insert answer E">
+                                </div>
                             </div>
-                        </div>
                         </div>
                     </div>
                     <div id="buttonAddSub">
-                        <a class="btn btn-primary text-uppercase buttonAddItem" onclick="functionSub()" >-</a> <br><br>
-                        <a class="btn btn-primary text-uppercase buttonAddItem" onclick="myFunction()">+</a>
+                        <a class="btn btn-primary text-uppercase buttonAddSubItem" onclick="functionSub()" >-</a> <br><br>
+                        <a class="btn btn-primary text-uppercase buttonAddSubItem" onclick="myFunction()">+</a>
                     </div>
                  </div>
 
