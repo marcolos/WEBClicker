@@ -23,8 +23,6 @@
     width: 50%;
 }
 
-
-
 #addImage{
     margin-top: 5%;
     padding-left: 2%;
@@ -40,7 +38,7 @@
     padding-left: 15%;
 }
 
-.col-sm-10{
+.col-10{
     padding-left: 25px;
     padding-top: 2px;
 }
@@ -56,20 +54,18 @@
 
 #myResultDiv{
     text-align: center;
-    align-self: center;
+    padding-top: 30px;
+    /*align-self: center;*/
+}
+
+#myResetDiv{
+    text-align: center;
+    padding-top: 30px;
+    /*align-self: center;*/
 }
 
 
-@media screen and (max-width: 600px) {
-    /*
-    #container {
-        margin-bottom: 10px;
-        margin-right: 10px;
-        margin-left: 10px;
-        margin-top: 10px;
-        border: 2px solid silver;
-    }
-    */
+@media screen and (max-width: 700px) {
     #addImage{
         width: 90%;
         margin-left: 8%;
@@ -79,4 +75,5 @@
     #sendButton{
         padding-left: 70%;
     }
+
 }

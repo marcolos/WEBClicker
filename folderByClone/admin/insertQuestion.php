@@ -93,8 +93,8 @@ if(isset($_POST['submitInsertAnswer'])){ //check if form was submitted
         <div class="container">
             <form action="" method="post">
                 <div class="form-group row">
-                    <label for="questionLabel" class="col-sm-1 col-form-label"><h6>Question</h6></label>
-                    <div class="col-sm-11">
+                    <label for="questionLabel" class="col-lg-1 col-form-label"><h6>Question</h6></label>
+                    <div class="col-lg-11">
                         <input name="question" type="text" class="form-control" id="questionLabel" placeholder="Insert a Question">
                     </div>
                 </div>

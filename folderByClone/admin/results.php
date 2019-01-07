@@ -63,15 +63,12 @@ $conn->close();
         var countE = <?php echo $countE; ?>;
         var countAnswer = 2;
 
-        if(answerC !='NULL')
+        if(answerC !='')
             countAnswer++;
-        if(answerD !='NULL')
+        if(answerD !='')
             countAnswer ++;
-        if(answerE !='NULL')
+        if(answerE !='')
             countAnswer ++;
-
-
-
 
         function drawChart() {
             if (countAnswer == 2) {

@@ -7,9 +7,13 @@ $folder = $array[$count-2];
 if ($folder!=$_SESSION['role']){
     header("location:/index.html");
 }
+// Lo uso per la copy url
+$domain = "www.webclicker.altervista.org/";
+$forURLcopy = $domain .$folder ."/admin/set.php?id=";
 ?>
 
 <?php
+//Per cancellare una domanda
 if($_GET['del'])
 {
     $id = $_GET['del'];
@@ -30,6 +34,7 @@ if($_GET['del'])
 <html lang="en">
     <head>
         <script>
+            // Per cancellare una domanda
             function Delete(id)
             {
                 window.location="index.php?del="+id;
@@ -77,17 +82,20 @@ if($_GET['del'])
         ?>
                     <li class="list-group-item">
                         <div class="row">
-                            <div class="col-1">
+                            <div class="col-lg-1">
                                 <?php echo '<h5>'. 'ID = '.$id. '</h5>';?>
                             </div>
-                            <div class="col-8">
+                            <div class="col-lg-7">
                                 <?php echo '<h5>'. $question. '</h5>';?>
                             </div>
-                            <div class="col-3">
+                            <div class="col-lg-4">
                                 <button class="btn btn-primary text-uppercase" onclick="window.location.href = '<?php echo 'set.php?id='.$id?>'">View</button>
                                 <button class="btn btn-mycolor text-uppercase" onclick="window.location.href = '<?php echo 'editQuestion.php?id='.$id?>'">Edit</button>
-<!--                                <button name="id" value="--><?php //echo $id;?><!--" class="btn btn-primary text-uppercase">Delete</button>-->
                                 <input class="btn btn-danger text-uppercase" value="delete" type="button" name="abc" id="abc" onclick="return Delete(<?php echo $id ?>);"/>
+                                <button class="btn btn-light text-uppercase copyurlButton" data-dismiss="alert" id="copybtn<?php echo $id;?>" onclick="copyURL(<?php echo $id ?>)">copy url</button>
+                                <div style="display: none" id="showalertdiv<?php echo $id;?>" class="alert alert-success" role="alert">
+                                    <p><strong>URL copied correctly.</strong> </p>
+                                </div>
                             </div>
                     </li>
         <?php
@@ -114,6 +122,59 @@ if($_GET['del'])
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
         <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../../js/notify.min.js"></script>
+
+        <script type="text/javascript">
+            function sleep (time) {
+                return new Promise((resolve) => setTimeout(resolve, time));
+            }
+
+            function copyURL(id) {
+                var id = id;
+                var url = "<?php echo $forURLcopy;?>"+id;
+
+                const el = document.createElement('textarea');
+                el.value = url;
+                document.body.appendChild(el);
+                el.select();
+                document.execCommand('copy');
+                //$(".copyurlButton").notify("Hello Box");
+                document.body.removeChild(el);
+
+                document.getElementById("showalertdiv"+id).style.display='block';
+                sleep(1000).then(() => {
+                    // Do something after the sleep!
+                    document.getElementById("showalertdiv"+id).style.display='none';
+                });
+
+                // DIALOG A SCOMPARSA JQUERY
+                // $("#dialog"+id).dialog({
+                //     show: {
+                //         effect: "blind",
+                //         duration: 500
+                //     },
+                //     hide: {
+                //         effect: "explode",
+                //         duration: 250
+                //     },
+                //     modal: true,
+                //     title: "Copy",
+                //     width: 150,
+                //     height: 100,
+                //     open: function (event, ui) {
+                //         setTimeout(function () {
+                //             $("#dialog"+id).dialog("close");
+                //         }, 1000);
+                //     }
+                // });
+
+                // DA AGGIUNGERE SOTTO IL BUTTON COPY URL
+                //<div id="dialog<?php //echo $id?>//" style="display: none">
+                //        URL copied correctly.
+                //</div>
+            }
+        </script>
+
     </body>
 </html>
 

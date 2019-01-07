@@ -80,13 +80,13 @@ if(isset($_POST['SubmitSendAnswer'])){ //check if form was submitted
             $answerD = $row['ANSWERD'];
             $answerE = $row['ANSWERE'];
             $numAnswer = 2;
-            if ($answerC != 'NULL'){
+            if ($answerC != ''){
                 $numAnswer ++;
             }
-            if ($answerD != 'NULL'){
+            if ($answerD != ''){
                 $numAnswer ++;
             }
-            if ($answerE != 'NULL'){
+            if ($answerE != ''){
                 $numAnswer ++;
             }
         }
