@@ -183,7 +183,7 @@ $conn->close();
                 <!--One of three columns -->
                 <button id="resetbtn" class="btn btn-primary btn-lg text-uppercase resetButton" onclick="reset(<?php echo $id; ?>)"> Reset Answers </button>
                 <div style="display: none" id="showalertdiv" class="alert alert-success" role="alert">
-                    <p><strong>Reset is been done correctly.</strong> </p>
+                    <p><strong>Reset has been done correctly.</strong> </p>
                 </div>
 <!--                RESET USANDO IL FORM: E' STATO SOSTITUITO DALLA CHIAMATA AJAX-->
 <!--                <form action="" method="post">-->

@@ -10,7 +10,38 @@ if ($folder!=$_SESSION['role']){
 // Lo uso per la copy url
 $domain = "www.webclicker.altervista.org/";
 $forURLcopy = $domain .$folder ."/admin/set.php?id=";
+
+
+$result = $conn->query("SELECT NAME,SURNAME FROM LOGIN WHERE USERNAME = '$login_session'");
+if ($result->num_rows > 0) {
+// output data of each row
+    while ($row = $result->fetch_assoc()) {
+        $name = $row['NAME'];
+        $surname = $row['SURNAME'];
+    }
+}
+
+// VIENE ESEGUITA QUESTA QUERY SE PREMO DESETTED
+if(isset($_POST['deset'])){ //check if form was submitted
+    include('../../session.php');
+    $username = $_SESSION['login_user'];
+
+    $conn->query("UPDATE QUESTIONS SET SETTED='0' WHERE USERNAME = '$username'");
+}
+
+$result = $conn->query("SELECT ID_QUESTION FROM QUESTIONS WHERE USERNAME = '$login_session' AND SETTED = 1");
+if ($result->num_rows > 0) {
+// output data of each row
+    while ($row = $result->fetch_assoc()) {
+        $id_setted = $row['ID_QUESTION'];
+    }
+}
+else{
+    $id_setted = "None";
+}
+
 ?>
+
 
 <?php
 //Per cancellare una domanda
@@ -29,6 +60,7 @@ if($_GET['del'])
 
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -54,7 +86,7 @@ if($_GET['del'])
         <link rel="stylesheet" href="../../css/mycss/admin.css">
     </head>
     <body>
-        <h1>Welcome <?php echo $login_session; ?></h1>
+        <h1>Welcome <?php echo $name." ".$surname; ?></h1>
         <h2><a href = "/logout.php">Sign Out</a></h2>
         <br>
         <?php
@@ -73,7 +105,20 @@ if($_GET['del'])
                 ?>
 
                 <div class="container listcontainer">
-                <h2>Question List</h2>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h2>Question List</h2>
+                        </div>
+                        <div id = divDesetted>
+                            <form action="" method="post">
+                                <h5>Question setted: <?php echo '&nbsp'.'&nbsp'.'ID = '.$id_setted .'&nbsp';?>
+                                    <input type="submit" name="deset" value="Desetted" id="desettedButton" class="btn btn-primary text-uppercase">
+                                </h5>
+                            </form>
+                        </div>
+                    </div>
+
+
                 <div class="list-group">
 
         <?php

@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="160a59b7-8055-42c3-87af-72f40134ab5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/folderByClone/admin/reset.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperAdmin/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/SuperAdmin/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/mycss/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mycss/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/mycss/insertQuestion.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mycss/insertQuestion.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/mycss/viewQuestion.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mycss/viewQuestion.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/folderByClone/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/folderByClone/admin/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/folderByClone/admin/insertQuestion.php" beforeDir="false" afterPath="$PROJECT_DIR$/folderByClone/admin/insertQuestion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folderByClone/admin/results.php" beforeDir="false" afterPath="$PROJECT_DIR$/folderByClone/admin/results.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/folderByClone/admin/set.php" beforeDir="false" afterPath="$PROJECT_DIR$/folderByClone/admin/set.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folderByClone/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/folderByClone/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/folderByClone/ok_sendAnswer.html" beforeDir="false" afterPath="$PROJECT_DIR$/folderByClone/ok_sendAnswer.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,21 +16,93 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SuperAdmin/index.css">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/mycss/admin.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="441">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SuperAdmin/index.php">
+        <entry file="file://$PROJECT_DIR$/folderByClone/admin/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-145">
-              <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+            <state relative-caret-position="540">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/mycss/insertQuestion.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="706">
+              <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/mycss/results.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="13" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/folderByClone/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="511">
+              <caret line="88" column="29" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/folderByClone/admin/set.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3528">
+              <caret line="204" column="27" lean-forward="true" selection-start-line="204" selection-start-column="27" selection-end-line="204" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/folderByClone/ok_sendAnswer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/folderByClone/admin/editQuestion.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1098">
+              <caret line="61" column="33" lean-forward="true" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/folderByClone/admin/insertQuestion.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="134" column="30" lean-forward="true" selection-start-line="134" selection-start-column="30" selection-end-line="135" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/folderByClone/admin/reset.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -53,6 +119,9 @@
     </option>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>SubmitStartAnswer</find>
+    </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
@@ -94,17 +163,17 @@
         <option value="$PROJECT_DIR$/logout.php" />
         <option value="$PROJECT_DIR$/SuperAdmin/index.php" />
         <option value="$PROJECT_DIR$/folderByClone/admin/editQuestion.php" />
-        <option value="$PROJECT_DIR$/folderByClone/admin/insertQuestion.php" />
         <option value="$PROJECT_DIR$/css/mycss/insertQuestion.css" />
         <option value="$PROJECT_DIR$/folderByClone/index.php" />
         <option value="$PROJECT_DIR$/folderByClone/admin/results.php" />
-        <option value="$PROJECT_DIR$/css/mycss/admin.css" />
-        <option value="$PROJECT_DIR$/folderByClone/admin/index.php" />
         <option value="$PROJECT_DIR$/folderByClone/admin/reset.php" />
-        <option value="$PROJECT_DIR$/folderByClone/admin/set.php" />
         <option value="$PROJECT_DIR$/css/mycss/viewQuestion.css" />
-        <option value="$PROJECT_DIR$/folderByClone/ok_sendAnswer.html" />
         <option value="$PROJECT_DIR$/SuperAdmin/index.css" />
+        <option value="$PROJECT_DIR$/folderByClone/admin/set.php" />
+        <option value="$PROJECT_DIR$/css/mycss/admin.css" />
+        <option value="$PROJECT_DIR$/folderByClone/ok_sendAnswer.html" />
+        <option value="$PROJECT_DIR$/folderByClone/admin/index.php" />
+        <option value="$PROJECT_DIR$/folderByClone/admin/insertQuestion.php" />
       </list>
     </option>
   </component>
@@ -127,6 +196,28 @@
             <path>
               <item name="WEBClicker" type="b2602c69:ProjectViewProjectNode" />
               <item name="WEBClicker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WEBClicker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEBClicker" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WEBClicker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEBClicker" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="mycss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WEBClicker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEBClicker" type="462c0819:PsiDirectoryNode" />
+              <item name="folderByClone" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WEBClicker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEBClicker" type="462c0819:PsiDirectoryNode" />
+              <item name="folderByClone" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -180,16 +271,19 @@
       <workItem from="1544621034781" duration="108829000" />
       <workItem from="1545963645630" duration="57000" />
       <workItem from="1546477981707" duration="23035000" />
+      <workItem from="1547548555389" duration="231000" />
+      <workItem from="1547648722358" duration="12466000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133540000" />
+    <option name="totallyTimeSpent" value="146237000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21316166" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21888413" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -204,7 +298,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32891566" />
-      <window_info anchor="bottom" id="File Transfer" order="12" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="File Transfer" order="12" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -244,13 +338,6 @@
     <entry file="file://$PROJECT_DIR$/css/addedcss/all.css" />
     <entry file="file://$USER_HOME$/Desktop/WEBClicker copy/answerQuestion.php" />
     <entry file="file://$PROJECT_DIR$/HCI/admin/results.css" />
-    <entry file="file://$PROJECT_DIR$/css/mycss/results.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HCI/admin/provaSession.php" />
     <entry file="file://$PROJECT_DIR$/HCI/admin/start_answer.php" />
     <entry file="file://$PROJECT_DIR$/HCI/sendAnswer.php" />
@@ -258,23 +345,9 @@
     <entry file="file://$PROJECT_DIR$/ParallelComputing/admin/set.php" />
     <entry file="file://$PROJECT_DIR$/ParallelComputing/admin/results.php" />
     <entry file="file://$PROJECT_DIR$/HCI/admin/provaCancellazione.php" />
-    <entry file="file://$PROJECT_DIR$/css/mycss/userInterface.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="16" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HCI/admin/index.php" />
     <entry file="file://$PROJECT_DIR$/HCI/admin/results.php" />
     <entry file="file://$PROJECT_DIR$/HCI/admin/set.php" />
-    <entry file="file://$PROJECT_DIR$/css/mycss/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HCI/index.php" />
     <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -313,27 +386,7 @@
         <state relative-caret-position="-983" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/notify.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/folderByClone/admin/results.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/folderByClone/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="88" column="29" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js/notify.min.js" />
     <entry file="file://$PROJECT_DIR$/js/bootstrap.bundle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -352,106 +405,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/notify.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/mycss/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/folderByClone/admin/reset.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js/notify.js" />
     <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/folderByClone/admin/set.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="291" column="23" lean-forward="true" selection-start-line="288" selection-start-column="20" selection-end-line="291" selection-end-column="23" />
-          <folding>
-            <element signature="e#245#312#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/mycss/viewQuestion.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/folderByClone/admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="97" column="38" lean-forward="true" selection-start-line="95" selection-start-column="32" selection-end-line="97" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#li#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/mycss/insertQuestion.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/folderByClone/admin/insertQuestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2372">
-          <caret line="158" column="73" selection-start-line="158" selection-start-column="73" selection-end-line="158" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/folderByClone/admin/editQuestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/folderByClone/ok_sendAnswer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SuperAdmin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SuperAdmin/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SuperAdmin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="29" column="52" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mycss/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mycss/userInterface.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="16" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mycss/viewQuestion.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/folderByClone/admin/results.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/folderByClone/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="88" column="29" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mycss/results.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mycss/insertQuestion.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mycss/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/folderByClone/admin/set.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3528">
+          <caret line="204" column="27" lean-forward="true" selection-start-line="204" selection-start-column="27" selection-end-line="204" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/folderByClone/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/folderByClone/admin/reset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/folderByClone/admin/editQuestion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1098">
+          <caret line="61" column="33" lean-forward="true" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/folderByClone/ok_sendAnswer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/folderByClone/admin/insertQuestion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="134" column="30" lean-forward="true" selection-start-line="134" selection-start-column="30" selection-end-line="135" />
         </state>
       </provider>
     </entry>

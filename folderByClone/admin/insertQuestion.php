@@ -156,7 +156,7 @@ if(isset($_POST['submitInsertAnswer'])){ //check if form was submitted
                             <!--One of three columns -->
                         </div>
                         <div class="col-2" id="sendButton"><br>
-                                <input type="submit" name="submitInsertAnswer" value="Submit" class="btn btn-success btn-lg">
+                                <input type="submit" name="submitInsertAn swer" value="Submit" class="btn btn-success btn-lg">
                         </div>
                     </div>
                 </div>
