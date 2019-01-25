@@ -104,7 +104,7 @@ $conn->close();
             <div class="form-group row">
                 <label for="questionLabel" class="col-sm-1 col-form-label"><h6>Question</h6></label>
                 <div class="col-sm-11">
-                    <input name="question" type="text" class="form-control" id="questionLabel" value="<?php echo $question;?>">
+                    <input name="question" type="text" class="form-control" id="questionLabel" value="<?php echo $question;?>" required>
                 </div>
             </div>
 
@@ -115,13 +115,13 @@ $conn->close();
                     <div class="form-group row">
                         <label for="answerALabel" class="col-sm-1 col-form-label"><h6>A.</h6></label>
                         <div class="col-sm-10">
-                            <input name ="answerA" type="text" class="form-control" id="answerALabel" value="<?php echo $answerA;?>">
+                            <input name ="answerA" type="text" class="form-control" id="answerALabel" value="<?php echo $answerA;?>" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="answerBLabel" class="col-sm-1 col-form-label"><h6>B.</h6></label>
                         <div class="col-sm-10">
-                            <input name="answerB" type="text" class="form-control" id="answerBLabel" value="<?php echo $answerB;?>">
+                            <input name="answerB" type="text" class="form-control" id="answerBLabel" value="<?php echo $answerB;?>" required>
                         </div>
                     </div>
 
@@ -214,14 +214,20 @@ $conn->close();
 
         function functionSub() {
             count -=1;
-            if (count == 4)
-                document.getElementById('myE').style.display='none';
+            if (count == 4) {
+                document.getElementById('myE').style.display = 'none';
+                document.getElementById("answerELabel").value = "";
+            }
 
-            if (count == 3)
-                document.getElementById('myD').style.display='none';
+            if (count == 3) {
+                document.getElementById('myD').style.display = 'none';
+                document.getElementById("answerDLabel").value = "";
+            }
 
-            if (count == 2)
-                document.getElementById('myC').style.display='none';
+            if (count == 2) {
+                document.getElementById('myC').style.display = 'none';
+                document.getElementById("answerCLabel").value = "";
+            }
 
             if (count <2)
                 count = 2;

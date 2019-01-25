@@ -87,7 +87,7 @@ if($_GET['del'])
     </head>
     <body>
         <h1>Welcome <?php echo $name." ".$surname; ?></h1>
-        <h2><a href = "/logout.php">Sign Out</a></h2>
+        <h4><a href = "/logout.php">Sign Out</a></h4>
         <br>
         <?php
             include ('../../config.php');
@@ -152,7 +152,7 @@ if($_GET['del'])
         <?php
 
             } else {
-                echo "Nessuna domanda presente";
+                echo "<div class=container><h5>Nessuna domanda presente</h5></div>";
             }
         ?>
 

@@ -107,6 +107,7 @@ if(isset($_POST['SubmitSendAnswer'])){ //check if form was submitted
             <!-- Your custom styles (optional) -->
             <link rel="stylesheet" href="../css/mycss/userInterface.css">
 
+
         </head>
         <body>
         <div id="container">
@@ -234,7 +235,7 @@ if(isset($_POST['SubmitSendAnswer'])){ //check if form was submitted
 
         <?php
     } else {
-        echo "Nessuna domanda a cui rispondere";
+        echo "<div class=nessDom><h1>Nessuna domanda a cui rispondere</h1></div>";
     }
     $conn->close();
 

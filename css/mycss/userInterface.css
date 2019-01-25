@@ -46,3 +46,15 @@ img {
 .mycol-sm{
     text-align: center;
 }
+
+.nessDom{
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+
+    #sendButton{
+        margin-top: 5%;
+        text-align: center;
+    }
+}

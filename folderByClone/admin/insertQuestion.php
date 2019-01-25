@@ -63,14 +63,20 @@ if(isset($_POST['submitInsertAnswer'])){ //check if form was submitted
 
         function functionSub() {
             count -=1;
-            if (count == 4)
-                document.getElementById('myE').style.display='none';
+            if (count == 4) {
+                document.getElementById('myE').style.display = 'none';
+                document.getElementById('answerELabel').value = "";
+            }
 
-            if (count == 3)
+            if (count == 3){
                 document.getElementById('myD').style.display='none';
+                document.getElementById('answerDLabel').value = "";
+            }
 
-            if (count == 2)
-                document.getElementById('myC').style.display='none';
+            if (count == 2) {
+                document.getElementById('myC').style.display = 'none';
+                document.getElementById('answerCLabel').value = "";
+            }
 
             if (count <2)
                 count = 2;
@@ -95,7 +101,7 @@ if(isset($_POST['submitInsertAnswer'])){ //check if form was submitted
                 <div class="form-group row">
                     <label for="questionLabel" class="col-lg-1 col-form-label"><h6>Question</h6></label>
                     <div class="col-lg-11">
-                        <input name="question" type="text" class="form-control" id="questionLabel" placeholder="Insert a Question">
+                        <input name="question" type="text" class="form-control" id="questionLabel" placeholder="Insert a Question" required>
                     </div>
                 </div>
 
@@ -106,13 +112,13 @@ if(isset($_POST['submitInsertAnswer'])){ //check if form was submitted
                         <div class="form-group row">
                             <label for="answerALabel" class="col-sm-1 col-form-label"><h6>A.</h6></label>
                             <div class="col-sm-10">
-                                <input name ="answerA" type="text" class="form-control" id="answerALabel" placeholder="Insert answer A">
+                                <input name ="answerA" type="text" class="form-control" id="answerALabel" placeholder="Insert answer A" required>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="answerBLabel" class="col-sm-1 col-form-label"><h6>B.</h6></label>
                             <div class="col-sm-10">
-                                <input name="answerB" type="text" class="form-control" id="answerBLabel" placeholder="Insert answer B">
+                                <input name="answerB" type="text" class="form-control" id="answerBLabel" placeholder="Insert answer B" required>
                             </div>
                         </div>
 
@@ -156,7 +162,7 @@ if(isset($_POST['submitInsertAnswer'])){ //check if form was submitted
                             <!--One of three columns -->
                         </div>
                         <div class="col-2" id="sendButton"><br>
-                                <input type="submit" name="submitInsertAn swer" value="Submit" class="btn btn-success btn-lg">
+                                <input type="submit" name="submitInsertAnswer" value="Submit" class="btn btn-success btn-lg">
                         </div>
                     </div>
                 </div>
