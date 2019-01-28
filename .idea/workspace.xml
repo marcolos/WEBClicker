@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="160a59b7-8055-42c3-87af-72f40134ab5f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/mycss/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mycss/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/mycss/userInterface.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mycss/userInterface.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folderByClone/admin/editQuestion.php" beforeDir="false" afterPath="$PROJECT_DIR$/folderByClone/admin/editQuestion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folderByClone/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/folderByClone/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folderByClone/admin/insertQuestion.php" beforeDir="false" afterPath="$PROJECT_DIR$/folderByClone/admin/insertQuestion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folderByClone/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/folderByClone/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folderByClone/ok_sendAnswer.html" beforeDir="false" afterPath="$PROJECT_DIR$/folderByClone/ok_sendAnswer.html" afterDir="false" />
-    </list>
+    <list default="true" id="160a59b7-8055-42c3-87af-72f40134ab5f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/folderByClone/admin/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="259">
-              <caret line="154" column="84" lean-forward="true" selection-start-line="154" selection-start-column="16" selection-end-line="154" selection-end-column="84" />
+              <caret line="154" column="84" selection-start-line="154" selection-start-column="16" selection-end-line="154" selection-end-column="84" />
             </state>
           </provider>
         </entry>
@@ -50,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/folderByClone/ok_sendAnswer.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
-              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -59,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/folderByClone/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="698">
-              <caret line="120" column="20" lean-forward="true" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+              <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -67,7 +58,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/mycss/userInterface.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
+            <state relative-caret-position="452">
               <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
             </state>
           </provider>
@@ -86,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/folderByClone/admin/editQuestion.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="383">
-              <caret line="218" column="65" lean-forward="true" selection-start-line="218" selection-start-column="65" selection-end-line="218" selection-end-column="65" />
+              <caret line="218" column="65" selection-start-line="218" selection-start-column="65" selection-end-line="218" selection-end-column="65" />
               <folding>
                 <element signature="n#style#0;n#div#4;n#div#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -107,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/folderByClone/admin/reset.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+              <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -278,12 +269,12 @@
       <workItem from="1545963645630" duration="57000" />
       <workItem from="1546477981707" duration="23035000" />
       <workItem from="1547548555389" duration="231000" />
-      <workItem from="1547648722358" duration="17166000" />
+      <workItem from="1547648722358" duration="17170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150937000" />
+    <option name="totallyTimeSpent" value="150941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -467,7 +458,7 @@
     <entry file="file://$PROJECT_DIR$/folderByClone/admin/reset.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -488,7 +479,7 @@
     <entry file="file://$PROJECT_DIR$/folderByClone/admin/editQuestion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
-          <caret line="218" column="65" lean-forward="true" selection-start-line="218" selection-start-column="65" selection-end-line="218" selection-end-column="65" />
+          <caret line="218" column="65" selection-start-line="218" selection-start-column="65" selection-end-line="218" selection-end-column="65" />
           <folding>
             <element signature="n#style#0;n#div#4;n#div#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -505,21 +496,21 @@
     <entry file="file://$PROJECT_DIR$/folderByClone/admin/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
-          <caret line="154" column="84" lean-forward="true" selection-start-line="154" selection-start-column="16" selection-end-line="154" selection-end-column="84" />
+          <caret line="154" column="84" selection-start-line="154" selection-start-column="16" selection-end-line="154" selection-end-column="84" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/folderByClone/ok_sendAnswer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/folderByClone/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="698">
-          <caret line="120" column="20" lean-forward="true" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+          <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -532,7 +523,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/mycss/userInterface.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
+        <state relative-caret-position="452">
           <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
         </state>
       </provider>
